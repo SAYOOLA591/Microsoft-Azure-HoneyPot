@@ -1,0 +1,9 @@
+<pre> cowrie_CL
+| where RawData has "New connection:"
+| extend 
+    Timestamp = extract(@"^(\d{4}-\d{2}-\d{2}T[^Z]+Z)", 1, RawData),
+    SrcIP = extract(@"New connection: (\d+\.\d+\.\d+\.\d+):\d+", 1, RawData),
+    SrcPort = extract(@"New connection: \d+\.\d+\.\d+\.\d+:(\d+)", 1, RawData),
+    DstIP = extract(@"\((\d+\.\d+\.\d+\.\d+):", 1, RawData),
+    DstPort = extract(@"\(\d+\.\d+\.\d+\.\d+:(\d+)", 1, RawData),
+    SessionID = extract(@"\[session: ([a-f0-9]+)\]", 1, RawData) <pre>
