@@ -27,3 +27,16 @@
   Name format: ``Network-T1078-SSH Successful Login``
   
   Based on MITRE ATT&CK T1078 (Valid Accounts)
+
+# Expose Linux Honeypot to the Internet
+  
+  Modify Network Security Group (NSG):
+  
+  Set source IP to Any
+ 
+  Port range to *
+  
+  Protocol to Any
+  
+  This allows attackers worldwide to connect to the honeypot on port 2222.
+
