@@ -28,7 +28,7 @@ Key Metric Includes:
 
 ## Table of Contents
 
-## [Cowrie-Setup: Scripts and Config for Cowrie Deployment](#cowrie-setup-scripts-and-config-for-cowrie-deployment)
+- [Cowrie-Setup: Scripts and Config for Cowrie Deployment](#cowrie-setup-scripts-and-config-for-cowrie-deployment)
 
 ## 🎯 Objectives
 
@@ -96,7 +96,7 @@ Logic App Designer
 
 ## Steps
 
-🐍 Cowrie Installation
+## Cowrie-Setup: Scripts and Config for Cowrie Deployment
 
 [PowerShell: Installation and Configuration](https://github.com/SAYOOLA591/Microsoft-Azure-HoneyPot/blob/main/instal-configure-cowrie.ps1)
 
