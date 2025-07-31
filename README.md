@@ -96,7 +96,7 @@ Logic App Designer
 
 ## Microsoft Azure HoneyPot Architecture
 
-![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/e8fcd6b2ca61826a076c1f79548bfae8e142387a/Azure%20honeypot%20Architecture.png)
+![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/32f96df893b11c0475fe7ed2b8f1ae7864fd4cc3/222.png)
 
 ---
 
