@@ -34,6 +34,10 @@ Metric value → count
 
 Save visual and name it "Failed SSH Logon Attempts".
 
+##
+
+## Note: Continue To Add more queries for all following Logon Types
+
 ## Related Querie:
 
 Failed SSH Logon 
