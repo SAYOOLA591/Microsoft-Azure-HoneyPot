@@ -28,16 +28,7 @@ Key Metric Includes:
 
 ## Table of Contents
 
-- Cowrie-Setup Scripts and Config for Cowrie deployment
-  
-- Data Collection Endpoint And Data Collection Rule
-
-- Windows-rdp-Monitoring: RDP logging configs (e.g. Security Logs Custom XPath event forwarders)
-
-- Microsoft Sentinel Workbook: Setting HeatMap and Related KQL Queries
-- Remediation: Suggested Controls and Response Plans
-- [Threat Intelligence Integration: Playbook/Logic App Designer](https://github.com/SAYOOLA591/Microsoft-Azure-HoneyPot/edit/main/README.md#-threat-intelligence-integration)
-
+## [Cowrie-Setup: Scripts and Config for Cowrie Deployment](#cowrie-setup-scripts-and-config-for-cowrie-deployment)
 
 ## 🎯 Objectives
 
