@@ -29,6 +29,7 @@ Key Metric Includes:
 ## Table of Contents
 
 - [Cowrie-Setup: Scripts and Config for Cowrie Deployment](#cowrie-setup-scripts-and-config-for-cowrie-deployment)
+- [Data Collection Endpoint and Data Collection Rule](#data-collection-endpoint-and-data-collection-rule)
 
 ## 🎯 Objectives
 
@@ -147,7 +148,9 @@ Image ref:
 
 ![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/a4f3c5972f2a5e2f2153c14b68bdbb04c597cf1d/2.png)
 
-##
+---
+
+## Data Collection Endpoint and Data Collection Rule
 
 ## 🌐 Data Collection Endpoint (DCE)
 Think of a Data Collection Endpoint (DCE) as a doorway or a specific address in Azure where data can be sent for monitoring.
