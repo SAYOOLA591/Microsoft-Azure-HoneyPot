@@ -27,7 +27,7 @@
   Navigate back to Log Analytics Workspace:  Under Agents, check Linux OS → Wait for heartbeat signal
  
   Once Linux VM shows as connected: Go to Logs tab.  
-  Query the custom table: CowrieLog_CL
+  Query the custom table: ```CowrieLog_CL```
   Note: Data may not appear immediately. It takes time for the endpoint to ingest and push logs.
 
   Extras & Notes
@@ -35,4 +35,4 @@
   
   Azure provides built-in queries and KQL training under the Logs section.
   
-  Custom table name should always end in _CL (for "Custom Log")
+  Custom table name should always end in _CL ```(for "Custom Log")```
