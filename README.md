@@ -288,7 +288,13 @@ Configuring the appropriate visualization types (especially "Map" for the IP-bas
  - Save to resource group: Project.
  - Use Refresh to automatically load updated data.
 
-![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/14d3a4fa87ce0f003cb3360e1bb57299231bccdf/23.png)
+![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/bd1955e20ec5e5eb62209c26d5309ab1ce2500ac/111.png)
+
+![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/bd1955e20ec5e5eb62209c26d5309ab1ce2500ac/112.png)
+
+![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/bd1955e20ec5e5eb62209c26d5309ab1ce2500ac/113.png)
+
+
 
 ---
 ## Remediation: Suggested Controls and Response Plans
@@ -349,9 +355,9 @@ I implemented an automated playbook for IP address enrichment using Azure Logic 
 
 The goal is to transform raw IP data collected from the honeypot into actionable threat intelligence. by automating enrichment, we can quickly determine whether an IP address is associated with known malicious activity saving time and supporting faster response decisions.
 
-![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/e3ca8422352f5ca850c3b0f91090ac241e4e842a/17.png)
+![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/ba2cf4375445325b378ba8757391dd53de658d8b/114.png)
 
-![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/e3ca8422352f5ca850c3b0f91090ac241e4e842a/21.png)
+![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/ba2cf4375445325b378ba8757391dd53de658d8b/115.png)
 
 ##
 
