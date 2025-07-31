@@ -30,6 +30,11 @@ Key Metric Includes:
 
 - [Cowrie-Setup: Scripts and Config for Cowrie Deployment](#cowrie-setup-scripts-and-config-for-cowrie-deployment)
 - [Data Collection Endpoint and Data Collection Rule](#data-collection-endpoint-and-data-collection-rule)
+- [Windows-rdp-Monitoring: RDP Logging Configs](#windows-rdp-monitoring-rdp-logging-configs)
+- [Microsoft Sentinel Workbook: Setting HeatMap and KQL Queries](#microsoft-sentinel-workbook-setting-heatmap-and-kql-queries)
+- [Remediation: Suggested Controls and Response Plans](#remediation-suggested-controls-and-response-plans)
+- [Threat Intelligence Integration: Playbook/Logic App Designer](#threat-intelligence-integration-playbooklogic-app-designer)
+- [Defense-in-Depth Simulation and Gaps Analysis](#defense-in-depth-simulation-and-gaps-analysis)
 
 ## 🎯 Objectives
 
@@ -203,6 +208,8 @@ Image ref:
 
 ---
 
+## Windows-rdp-Monitoring: RDP Logging Configs
+
 Windows Honeypot Setup & Log Strategy
 
 Virtual Machine Setup:
@@ -270,6 +277,7 @@ Save Queries
 - Save 4625-based query as "Failed Windows logon".
 
 ---
+## Microsoft Sentinel Workbook: Setting HeatMap and KQL Queries
 
 ## Microsoft Sentinel Workbook:
 
@@ -296,6 +304,7 @@ Image Ref:
 ![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/14d3a4fa87ce0f003cb3360e1bb57299231bccdf/23.png)
 
 ---
+## Remediation: Suggested Controls and Response Plans
 
 ## 🛡️ Remediation Plan NIST 800-61 Incident Handling Guide
 
@@ -330,8 +339,6 @@ Image Ref:
 ```All map queries returned no results due to no instances of malicious activity for the 24 hours after hardening.```
 
 
-
-
 ## Metrics After Hardening / Security Controls
 
 | Metric | Value |
@@ -353,7 +360,8 @@ Image Ref:
 - Submitted samples to VirusTotal
 - Will rotate honeypot passwords and monitor trends
 
-##
+---
+## Threat Intelligence Integration: Playbook/Logic App Designer
 
 ## 🔎 Threat Intelligence Integration
 
@@ -386,9 +394,9 @@ The goal is to transform raw IP data collected from the honeypot into actionable
 ```
 
 ---
+## Defense-in-Depth Simulation and Gaps Analysis
 
-
-## 🛡️ 🛡️ Defense-in-Depth Simulation & Gaps Analysis
+## 🛡️ Defense-in-Depth Simulation & Gaps Analysis
 
 Why It Matters:
 
