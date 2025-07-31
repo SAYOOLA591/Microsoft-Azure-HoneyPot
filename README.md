@@ -216,7 +216,7 @@ Virtual Machine Setup:
 Create a Windows VM, ensuring RDP port 3389 is publicly exposed. After deployment, log in via public IP/password to configure log forwarding to Azure Log Analytics.
 
 Log Forwarding Strategy:
-To manage costs, forward only specific Security logs Event ID 4625 (logon failure), and  using custom XPath filtering. Prioritize Event ID 4624 (successful logon), specifically tracking Logon Types 7 (Workstation Unlock) and 10 (RemoteInteractive) for critical Digital Forensic Analysis.
+To manage costs, forward only specific Security logs Event ID 4625 (logon failure), and  using custom XPath filtering for Event ID 4624 (successful logon), specifically tracking Logon Types 7 (Workstation Unlock) and 10 (RemoteInteractive) for critical Digital Forensic Analysis.
 
 Create Data Collection Endpoint (DCE) & Data Collection Rule (DCR). Just as it was done with the Cowrie.
 
@@ -226,14 +226,10 @@ XPath Expressions
 These are used in the custom data collection rules for targeting specific RDP logon types via Event IDs:
 
 ✅ Successful RDP Logon (Event ID 4624, Logon Type 7 or 10)
-*[System[(EventID=4624)]] and *[EventData[Data[@Name='LogonType'] = '10' or Data[@Name='LogonType'] = '7']]
-Log name:
+Log name: Security!*[System[(EventID=4624)]] and *[EventData[Data[@Name='LogonType'] = '10' or Data[@Name='LogonType'] = '7']]
 
-Security!*[System[(EventID=4624)]] and *[EventData[Data[@Name='LogonType'] = '10' or Data[@Name='LogonType'] = '7']]
 ❌ Failed RDP Logon (Event ID 4625)
-*[System[(EventID=4625)]]
-Log name:
-Security!*[System[(EventID=4625)]]
+Log name: Security!*[System[(EventID=4625)]]
 
 ```
 ![image alt](https://github.com/SAYOOLA591/HoneyPot-Images/blob/3d02ce298ca1dced0364f21791588aeea79d6c5f/8.png)
@@ -319,10 +315,9 @@ Image Ref:
 
 ## Metrics Before Hardening / Security Controls
 
-# 📆 Daily Honeypot Summary (24h)
+# 📆 Overrall Honeypot Summary
 
 **Date**: July 30, 2025  
-**Controls Applied**: Geo-blocking, NSG rules, password complexity
 
 ## 🔢 Metrics Overview
 
@@ -338,6 +333,11 @@ Image Ref:
 
 ```All map queries returned no results due to no instances of malicious activity for the 24 hours after hardening.```
 
+# 📆 Honeypot Summary (24h) After
+
+**Date**: July 31, 2025
+
+**Controls Applied**: Geo-blocking, NSG rules, password complexity
 
 ## Metrics After Hardening / Security Controls
 
@@ -350,7 +350,7 @@ Image Ref:
 
 ## 🧠 Observations
 
-- NSG rule blocked ~70% of attempts
+- NSG rule blocked ~98% of attempts
 - Cowrie captured 1 new scripts with known malware hashes
 - No successful RDP connections recorded
 
