@@ -18,4 +18,18 @@ source cowrie-env/bin/activate
 Upgrade pip and install requirements: python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 
+Cowrie Configuration
+
+Create a new config file: cd etc :  ls
+
+nano cowrie.cfg     Add: [telnet] enabled = true
+
+Save file and start Cowrie:  cd ..   
+
+cd bin
+
+./cowrie start
+
+Note: Cowrie Listening on Port 2222
+
 
