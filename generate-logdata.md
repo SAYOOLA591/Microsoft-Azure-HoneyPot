@@ -15,4 +15,4 @@ From Cowrie log directory, run:  python3 -m http.server 9999
 
 Add port 9999 to NSG rules On host machine, open browser:
 
-http://<public IP>:9999    Download cowrie.json log file for analysis
+http://<public></public> IP>:9999    Download cowrie.json log file for analysis
