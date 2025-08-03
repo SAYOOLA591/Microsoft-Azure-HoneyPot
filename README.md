@@ -352,14 +352,9 @@ SC-7 – Boundary Protection (NIST 800-53 Rev. 5)
 ---
 ## Threat Intelligence Integration: Playbook/Logic App Designer
 
-I implemented an automated playbook for IP address enrichment using Azure Logic App Designer, integrating with third-party services such as AbuseIPDB.
+I automated threat enrichment by building a Logic App playbook triggered by incident creation. This playbook extracted IP addresses from incidents and sent them to the AbuseIPDB API. The response included fields like abuse confidence score, ISP, and domain, which we used to assess the reputation of the IP. The playbook then posted this information back to the incident as a comment in Microsoft Sentinel. This helped analysts quickly determine whether the IP was linked to malicious behavior.
 
-- Create an account on AbuseIPDB
-- Obtain your API key
-- Configure an HTTP GET request in the Logic App to query the IP reputation from the API
-- Refer to AbuseIPDB's API documentation for request structure and parameters
-
-The goal is to transform raw IP data collected from the honeypot into actionable threat intelligence. by automating enrichment, we can quickly determine whether an IP address is associated with known malicious activity saving time and supporting faster response decisions.
+---
 
 ![image](https://private-user-images.githubusercontent.com/194605446/473815245-998a7ba0-bbd5-4bc3-bcb8-26954f8f89bf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQyNTMzMDAsIm5iZiI6MTc1NDI1MzAwMCwicGF0aCI6Ii8xOTQ2MDU0NDYvNDczODE1MjQ1LTk5OGE3YmEwLWJiZDUtNGJjMy1iY2I4LTI2OTU0ZjhmODliZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgwM1QyMDMwMDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MDdlN2RmOWQ0ZWQ3OTAxOGViN2Y4ODJiZGY4M2RkYTQ1MGQ2Y2UxODE1NTYwN2UyYTdiMjQxOWU3ZDIxNTg1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.zSkFPq13onKv0A1AZrsGbLC8xZyxr-r4nqBerInIRY4)
 
