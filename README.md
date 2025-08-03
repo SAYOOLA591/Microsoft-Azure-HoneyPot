@@ -369,7 +369,7 @@ The goal is to transform raw IP data collected from the honeypot into actionable
 
 ```plaintext
 
- 🧠 Threat Intelligence Enrichment
+    Threat Intelligence Enrichment
 
     Malicious IP Analysis
     IP: `125.40.122.202`
@@ -382,7 +382,9 @@ The goal is to transform raw IP data collected from the honeypot into actionable
 
 ## Project Conclusion:
 
-This project demonstrates how real attackers behave when given access to seemingly open systems. by analyzing their actions, we can understand how attacks evolve, identify common weak points, strengthen real infrastructure before it’s exploited. this honeypot helps bridge the gap between theory and real-world adversary behavior.
+In this project, we've created a Linux Honeypot and a Windows Server exposed to the internet. We ingested logs into our log analytics workspace, we created an alert for it and also integrated Microsoft Sentinel. We made a workbook and developed a playbook that runs on any newly triggered incidents. Essentially, in an enterprise environment, if an analyst examines an incident and has AbuseIPDB playbooks with enriched comments, it will save a significant amount of time down the road.
+
+Finally, it is up to us again to decide how we want to build out our playbooks and the kind of workflow that would work better for our organisation. We demonstrate how real attackers behave when given access to seemingly open systems. By analysing their actions, we can understand how attacks evolve, identify common vulnerabilities, and strengthen real-world infrastructure. This honeypot helps bridge the gap between theory and real-world adversary behaviour.
 
 
 
