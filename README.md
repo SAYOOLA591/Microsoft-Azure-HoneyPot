@@ -352,7 +352,7 @@ SC-7 – Boundary Protection (NIST 800-53 Rev. 5)
 ---
 ## Threat Intelligence Integration: Playbook/Logic App Designer
 
-I automated threat enrichment by building a Logic App playbook triggered by incident creation. This playbook extracted IP addresses from incidents and sent them to the AbuseIPDB API. The response included fields like abuse confidence score, ISP, and domain, which we used to assess the reputation of the IP. The playbook then posted this information back to the incident as a comment in Microsoft Sentinel. This helped analysts quickly determine whether the IP was linked to malicious behavior.
+I automate threat enrichment by building a Logic App playbook triggered by incident creation. This playbook extracted IP addresses from incidents and sent them to the AbuseIPDB API. The response included fields like abuse confidence score, ISP, and domain, which we used to assess the reputation of the IP. The playbook then posted this information back to the incident as a comment in Microsoft Sentinel. This helped analysts quickly determine whether the IP was linked to malicious behavior.
 
 ---
 
