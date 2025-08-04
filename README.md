@@ -8,7 +8,7 @@
 
 ## Project Overview
 
-To lure attackers, observe their TTPs (Tactics, Techniques, and Procedures), and potentially collect toolkits for analysis without putting real systems at risk. By analyzing the behavior of attackers within the honeypot, security teams can gain valuable threat intelligence, improve their defenses, and potentially prevent future attacks on critical systems. 
+To lure attackers, observe their Tactics, Techniques, and Procedures (TTPs), and potentially collect toolkits for analysis without putting real systems at risk. By analyzing the behaviour of attackers within the honeypot, security teams can gain valuable threat intelligence, improve their defences, and potentially prevent future attacks on critical systems. 
 
 This project sets up a live honeypot environment in **Microsoft Azure**, exposing:
 - A **Linux SSH honeypot** using [Cowrie](https://github.com/cowrie/cowrie)
@@ -113,7 +113,7 @@ Overview of cowrie installation
 ##
 
 
-View & Generate Log Data for Azure Log Analytics Workspace/ Downloaded to the Host Machine Via HTTP Sever
+View & Generate Log Data for Azure Log Analytics Workspace/ Downloaded to the Host Machine Via HTTP Server
 
 [Cowrie.log: Sample & Logs Download](https://github.com/SAYOOLA591/Microsoft-Azure-HoneyPot/blob/main/generate-logdata.md)
 
@@ -164,7 +164,7 @@ Its Purpose: A DCE provides the actual network endpoint (a URL) that data source
 ##
 
 ## Data Collection Rule (DCR)
-A Data Collection Rule (DCR) is like a detailed instruction manual that tells Azure Monitor what data to collect, how to process it, and where to send it.
+A Data Collection Rule (DCR) is akin to a detailed instruction manual that instructs Azure Monitor on what data to collect, how to process it, and where to send it.
 
 Its Purpose: DCRs define the logic for data collection. They specify:
 
@@ -176,7 +176,7 @@ Transformations (KQL): How to modify or enrich the data before it's stored (e.g.
 
 [DCE-DCR Collection Guide](https://github.com/SAYOOLA591/Microsoft-Azure-HoneyPot/blob/main/dce-dcr.md)
 
-Azure Monitors after Linux & Windows Machine Connected to push in Logs
+Azure Monitors after Linux & Windows Machine Connected to push to Logs
 
 ![image](https://private-user-images.githubusercontent.com/194605446/473814075-86ea1d3c-e169-488f-9da6-76995ff73ea2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQyNTIyMTQsIm5iZiI6MTc1NDI1MTkxNCwicGF0aCI6Ii8xOTQ2MDU0NDYvNDczODE0MDc1LTg2ZWExZDNjLWUxNjktNDg4Zi05ZGE2LTc2OTk1ZmY3M2VhMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgwM1QyMDExNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xZTFhNGJhN2U2NGY2MzYzZTUyZWJmNWFkMDgzY2RkMTZhNzgzY2VlZmQ1ODI3YzNiZDVjMDZjMDgzZTllOTI5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.UdeJbkiGeWhp3cPixMqOusUwHFqjUX8lZN4F3GprRVU)
 
@@ -186,7 +186,7 @@ Azure Monitors after Linux & Windows Machine Connected to push in Logs
 
   Generate Events for Testing
 - Simulate failed and successful login attempts on the Linux honeypot via SSH.
-- Purpose: Trigger fresh log entries to test Log Analytics data flow.
+- Purpose: Trigger fresh log entries to test the Log Analytics data flow.
 
 ##
 
@@ -200,7 +200,7 @@ Azure Monitors after Linux & Windows Machine Connected to push in Logs
 
 ##
 
-It's an excellent idea to set up alerts for successful SSH logins in honeypot! This is a classic use case: Network-T1078-SSH Successful Login Based on MITRE ATT&CK T1078 (Valid Accounts). by extension, essentially to create an Action Group for Email Notification anytime there's [Successful Login](https://github.com/SAYOOLA591/Microsoft-Azure-HoneyPot/blob/main/setup-alert-SSH.md)
+It's an excellent idea to set up alerts for successful SSH logins in a honeypot! This is a classic use case: Network-T1078-SSH Successful Login Based on MITRE ATT&CK T1078 (Valid Accounts). by extension, essentially to create an Action Group for Email Notification anytime there's [Successful Login](https://github.com/SAYOOLA591/Microsoft-Azure-HoneyPot/blob/main/setup-alert-SSH.md)
  
 
 ![image](https://private-user-images.githubusercontent.com/194605446/473814588-f2ed992a-82f8-403f-9d9f-7112574e42a9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQyNTI2MzcsIm5iZiI6MTc1NDI1MjMzNywicGF0aCI6Ii8xOTQ2MDU0NDYvNDczODE0NTg4LWYyZWQ5OTJhLTgyZjgtNDAzZi05ZDlmLTcxMTI1NzRlNDJhOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgwM1QyMDE4NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNDkzOTVhZjFhMzg2YTA1ODkyYzkyYTJiZjE0YzgwZmYyMWJjMmU0NDM1NTlmZmZlN2ZjNTY5MDkxZDQwMTdhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.zDtDYnlvAs2ly6EDBZA9E0XBXl0wK-rhGblXzdUa7UU)
@@ -214,10 +214,10 @@ It's an excellent idea to set up alerts for successful SSH logins in honeypot! T
 Windows Honeypot Setup & Log Strategy
 
 Virtual Machine Setup:
-Create a Windows VM, ensuring RDP port 3389 is publicly exposed. After deployment, log in via public IP/password to configure log forwarding to Azure Log Analytics.
+Create a Windows VM, ensuring RDP port 3389 is publicly exposed. After deployment, log in via the public IP address and password to configure log forwarding to Azure Log Analytics.
 
 Log Forwarding Strategy:
-To manage costs, forward only specific Security logs Event ID 4625 (logon failure), and  using custom XPath filtering for Event ID 4624 (successful logon), specifically tracking Logon Types 7 (Workstation Unlock) and 10 (RemoteInteractive) for critical Digital Forensic Analysis.
+To manage costs, forward only specific Security logs, Event ID 4625 (logon failure), and use custom XPath filtering for Event ID 4624 (successful logon). Specifically, track Logon Types 7 (Workstation Unlock) and 10 (Remote Interactive) for critical Digital Forensic Analysis.
 
 Create Data Collection Endpoint (DCE) & Data Collection Rule (DCR). Just as it was done with the Cowrie.
 
