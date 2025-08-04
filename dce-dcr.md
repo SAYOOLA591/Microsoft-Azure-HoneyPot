@@ -1,7 +1,7 @@
 # Create Data Collection Endpoint
   
   Search for Data Collection Endpoints in Azure.
-  Click Create:  Assign it to the same Resource Group.
+  Click "Create" and assign it to the same Resource Group.
   Name it (e.g., LinuxMachine). Review + Create
 
 # Create Data Collection Rule (DCR)
@@ -24,9 +24,9 @@
 
 # Verify Integration & Data Ingestion
 
-  Navigate back to Log Analytics Workspace:  Under Agents, check Linux OS → Wait for heartbeat signal
+  Navigate back to Log Analytics Workspace:  Under Agents, check Linux OS → Wait for heartbeat signal.
  
-  Once Linux VM shows as connected: Go to Logs tab.  
+  Once Linux VM shows as connected, Go to the Logs tab.  
   Query the custom table: ```CowrieLog_CL```
   Note: Data may not appear immediately. It takes time for the endpoint to ingest and push logs.
 
