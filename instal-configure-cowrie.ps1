@@ -1,4 +1,4 @@
-Install
+Installation
 
 Run system updates: sudo apt-get update && sudo apt-get upgrade -y
 Add a Cowrie user: sudo adduser --disabled-password cowrie
