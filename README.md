@@ -212,7 +212,7 @@ It's an excellent idea to set up alerts for successful SSH logins in a honeypot!
 
 ## Windows-rdp-Monitoring: RDP Logging Configs
 
-Windows Honeypot Setup & Log Strategy
+Windows Honeypot Setup & Logs Strategy
 
 Virtual Machine Setup:
 Create a Windows VM, ensuring RDP port 3389 is publicly exposed. After deployment, log in via the public IP address and password to configure log forwarding to Azure Log Analytics.
