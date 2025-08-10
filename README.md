@@ -33,12 +33,12 @@ Key Metric Includes:
 
 ## Table of Contents
 
-- [Cowrie-Setup: Scripts and Config for Cowrie Deployment](#cowrie-setup-scripts-and-config-for-cowrie-deployment)
-- [Data Collection Endpoint and Data Collection Rule](#data-collection-endpoint-and-data-collection-rule)
-- [Windows-rdp-Monitoring: RDP Logging Configs](#windows-rdp-monitoring-rdp-logging-configs)
-- [Microsoft Sentinel Workbook: Setting HeatMap and KQL Queries](#microsoft-sentinel-workbook-setting-heatmap-and-kql-queries)
-- [Remediation: Suggested Controls and Response Plans](#remediation-suggested-controls-and-response-plans)
-- [Threat Intelligence Integration: Playbook/Logic App Designer](#threat-intelligence-integration-playbooklogic-app-designer)
+1. [Cowrie-Setup: Scripts and Config for Cowrie Deployment](#cowrie-setup-scripts-and-config-for-cowrie-deployment)
+2. [Data Collection Endpoint and Data Collection Rule](#data-collection-endpoint-and-data-collection-rule)
+3. [Windows-rdp-Monitoring: RDP Logging Configs](#windows-rdp-monitoring-rdp-logging-configs)
+4. [Microsoft Sentinel Workbook: Setting HeatMap and KQL Queries](#microsoft-sentinel-workbook-setting-heatmap-and-kql-queries)
+5. [Remediation: Suggested Controls and Response Plans](#remediation-suggested-controls-and-response-plans)
+6. [Threat Intelligence Integration: Playbook/Logic App Designer](#threat-intelligence-integration-playbooklogic-app-designer)
 
 ## Objectives
 
